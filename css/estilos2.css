@@ -1,0 +1,57 @@
+.contenedor{
+    background-color: rgb(221, 206, 255);
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 18fr 2fr;
+    grid-template-areas: "header header header" "side1 contenido side2" "footer footer footer";
+}
+.contenedor>div{
+    background-color: crimson;
+}
+.contenedor .header{
+    background-color: darkblue;
+    grid-column: header;
+}
+.contenedor .side1{
+    background-color: skyblue;
+    grid-column: side1;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+.contenedor .side1 .texto1{
+    background-color: aqua;
+}
+.contenedor .side1 .texto2{
+    background-color: aqua;
+}
+.contenedor .contenido .texto3{
+    background-color: aqua;
+}
+.contenedor .contenido .texto4{
+    background-color: aqua;
+}
+.contenedor .contenido .texto5{
+    background-color: aqua;
+}
+.contenedor .side2{
+    background-color: skyblue;
+    grid-column: side2;
+}
+.contenedor .contenido{
+    background-color: blue;
+    grid-column: contenido;
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contenedor .footer{
+    background-color: plum;
+    grid-column: footer;
+}
